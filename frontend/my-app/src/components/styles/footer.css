@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+   
+.social-icon:hover {
+    transform: scale(1.1);
+}
+   
