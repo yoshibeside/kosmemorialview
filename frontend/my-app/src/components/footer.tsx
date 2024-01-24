@@ -11,10 +11,14 @@ function Footer () {
         google: 'your-google-url',
        };
 
+    const toggleFuntion = () => {
+
+    }
+
     return (
       <footer className="footer-bottom" style={{ backgroundColor: '#d3d3d3', padding: '1rem' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <img src={"../../../logo_dago_kos.png"} alt="Logo Dago Kos" style={{ maxWidth: '20%', height: 'auto' }}/>
+        <img src={"../../../ahsoska_logo.png"} alt="Logo Dago Kos" style={{ maxWidth: '20%', height: 'auto' }}/>
         <p>Contact Us: cozykos@gmail.com</p>
         <p>Location: Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135</p>
         <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
