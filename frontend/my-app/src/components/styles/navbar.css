@@ -86,3 +86,16 @@
     -moz-transform:scaleX(-1);
     transform:scaleX(-1);
 }
+
+.menu-option {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem/* 12px */;
+    padding-right: 0.75rem/* 12px */;
+}
+
+.menu-option.selected-menu {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
