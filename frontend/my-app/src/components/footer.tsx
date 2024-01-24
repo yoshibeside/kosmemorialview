@@ -18,15 +18,18 @@ function Footer () {
     return (
         <footer className="footer-bottom" style={{ backgroundColor: '#d3d3d3', padding: '1rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
-            <img src={"../../../logo_dago_kos.png"} alt="Logo Dago Kos" style={{ maxWidth: '30%', height: 'auto' }}/>
+            <img src={"../../../logo_dago_kos.png"} alt="Logo Dago Kos" style={{ maxWidth: '20%', height: 'auto' }}/>
             <p>Contact Us: cozykos@gmail.com</p>
             <p>Location: Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135</p>
             <div style={{ display: 'flex', gap: '10px' }}>
+
+            <a href={socialMediaUrls.whatsapp} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={30} className="social-icon" />
-              <a href={socialMediaUrls.whatsapp} target="_blank" rel="noopener noreferrer">
+            </a>
+              <a href={socialMediaUrls.instagram} target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={30} className="social-icon" />
               </a>
-              <a href={socialMediaUrls.instagram} target="_blank" rel="noopener noreferrer">
+              <a href={socialMediaUrls.google} target="_blank" rel="noopener noreferrer">
                 <FaGoogle size={30} className="social-icon" />
               </a>
             </div>
