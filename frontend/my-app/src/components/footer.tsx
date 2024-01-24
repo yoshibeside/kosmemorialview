@@ -11,10 +11,6 @@ function Footer () {
         google: 'your-google-url',
        };
 
-    const toggleFuntion = () => {
-
-    }
-
     return (
       <footer className="footer-bottom" style={{ backgroundColor: '#d3d3d3', padding: '1rem' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

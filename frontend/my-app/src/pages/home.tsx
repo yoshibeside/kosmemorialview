@@ -1,9 +1,13 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer"
+import './styles/home.css'
 function Home() {
-    return(<>
-        <Navbar />
-        <Footer />
+    return(<> 
+            <div id="header">
+            </div>
+            <video autoPlay id="video-background" muted loop>
+                <source src="../../../luxury_kos.mp4" type="video/mp4" />
+            </video>
+            <div id="hard-content">
+            </div>
     </>)
 }
 
