@@ -15,9 +15,9 @@ function Navbar() {
         <a href="/">
           <img
             className="img-fluid"
-            src="../../../../logo_dago_kos.png"
-            width="358"
-            height="100"
+            src="../../../../text_logo.png"
+            width="330"
+            height="80"
             alt="Dago Student Living"
           />
         </a>
@@ -26,14 +26,14 @@ function Navbar() {
           <button
             onClick={toggleMenu}
             type="button"
-            className="flex items-center justify-center mr-10 w-10 h-10 text-xl text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="flex items-center justify-center mr-10 w-10 h-10 text-xl text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
             <span className="sr-only  ">Open main menu</span>
             {show ? (
-                <button className="hover:bg-gray-100" style={{zIndex:100}}>X</button>
+                <></>
                 ) : (
                     <svg
-                    className="w-5 h-5"
+                    className="hover-button w-10 h-10 "
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -50,12 +50,12 @@ function Navbar() {
                 show ? 'translate-x-0' : 'translate-x-full'
                 } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-64 bg-opacity-10 bg-blue-100 z-50`}
             >
-            
+            <button onClick={toggleMenu}className="hover-button exit-menu text-3xl text-white focus:outline-none ">X</button>
             <ul className='mt-16'>
               <li>
                 <a
                   href="/"
-                  className="menu-option select-menu text-white bg-blue-700 rounded dark:bg-blue-600"
+                  className="menu-option select-menu mt-40 text-xl text-white dark:bg-blue-600"
                   aria-current="page"
                 >
                   Home
@@ -64,7 +64,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="menu-option text-white text-xl dark:text-gray-400"
                 >
                   Ameneties
                 </a>
@@ -72,7 +72,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="menu-option text-white text-xl dark:text-gray-400"
                 >
                   Floor Plan
                 </a>
@@ -80,7 +80,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="menu-option text-white text-xl dark:text-gray-400"
                 >
                   Contact
                 </a>
