@@ -16,7 +16,7 @@ function Navbar() {
           <img
             className="img-fluid"
             src="../../../../text_logo.png"
-            width="330"
+            width="190"
             height="80"
             alt="Dago Student Living"
           />
