@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.navbar a img {
+    width: 15vmax;
+}
+
 .menu-option {
     display: block;
     padding-top: 0.5rem;

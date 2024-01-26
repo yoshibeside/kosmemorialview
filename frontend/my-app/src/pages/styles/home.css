@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     height: 90%; /* Adjust the height as needed (20% of the viewport height) */
-    z-index: 2;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.7);
   }
 
@@ -14,3 +14,63 @@
     object-fit: cover; /* Ensure the video covers the specified height */
     z-index: -1; /* Place it behind other content */
 }
+
+#header-page {
+    position: absolute;
+    top: 45%;
+    left: 40vw;
+    transform: translate(-50%, -50%);
+    font-size: 1vmax;
+    font-weight: 500;
+    z-index: 1;
+    width: 50vw;
+}
+
+.header-text {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 1;
+    font-size: 3.5vmax ;
+}
+
+.header-child-button {
+    padding:2%;
+    margin-top:1rem;
+    border-radius: 3rem;  
+    border: solid 0.2rem #BB5390;
+    background-color: transparent;
+}
+
+
+/* .header-child-button::before,
+.header-child-button::after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
+
+.header-child-button::before,
+.header-child-button::after {
+  z-index: -1;
+}  */
+
+
+    /* &:before {
+        content: '';
+        position:absolute;
+        top: 0;
+        right: 0;
+        bottom: -50px;
+        left: 0;
+        background-color: blue;
+        transform: translateX(-100%);
+      }
+
+      &:hover {
+        color: tint(blueviolet, 75%);
+    
+        &:before {
+          transform: translateX(0);
+        }
+      } */
+
+

@@ -4,31 +4,33 @@ import './styles/navbar.css';
 function Navbar() {
   const [show, setShow] = useState(false);
 
-  const toggleMenu = () => {
-    setShow(!show);
+  const toggleMenu = (state: boolean) => {
+    if (state !== show){ 
+      setShow(state);
+      console.log("lkasjdlfksjlkdfj")
+    }
+    else return
+
   };
 
   return (
     <>
-    <div className="relative ">
+    <div  style={{ position: 'fixed', top: 0, width: '100%', zIndex:4}}>
       <div className="navbar">
         <a href="/">
           <img
             className="img-fluid"
             src="../../../../text_logo.png"
-            width="190"
-            height="80"
             alt="Dago Student Living"
           />
         </a>
 
         <nav>
           <button
-            onClick={toggleMenu}
+            onClick={() => toggleMenu(true)}
             type="button"
-            className="flex items-center justify-center mr-10 w-10 h-10 text-xl text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="flex items-center justify-center mr-10 w-10 h-10 text-xl text-p-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
-            <span className="sr-only  ">Open main menu</span>
             {show ? (
                 <></>
                 ) : (
@@ -45,17 +47,22 @@ function Navbar() {
             
           </button>
 
+          <div onMouseEnter={() => toggleMenu(true)} className='hover-menu fixed inset-y-0 right-0 w-64 bg-pink'>
+
+          </div>
+
           <div
-                className={`${
-                show ? 'translate-x-0' : 'translate-x-full'
-                } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-64 bg-opacity-10 bg-blue-100 z-50`}
+            className={`${
+            show ? 'translate-x-0' : 'translate-x-full'
+            } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-64 bg-opacity-40 bg-nav-color`}
+            onMouseOver={() => toggleMenu(true)}
+            onMouseLeave={() => toggleMenu(false)}
             >
-            <button onClick={toggleMenu}className="hover-button exit-menu text-3xl text-white focus:outline-none ">X</button>
             <ul className='mt-16'>
               <li>
                 <a
                   href="/"
-                  className="menu-option select-menu mt-40 text-xl text-white dark:bg-blue-600"
+                  className="menu-option select-menu mt-40 text-xl text-p-color dark:bg-blue-600"
                   aria-current="page"
                 >
                   Home
@@ -64,7 +71,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-white text-xl dark:text-gray-400"
+                  className="menu-option text-p-color text-xl dark:text-gray-400"
                 >
                   Ameneties
                 </a>
@@ -72,7 +79,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-white text-xl dark:text-gray-400"
+                  className="menu-option text-p-color text-xl dark:text-gray-400"
                 >
                   Floor Plan
                 </a>
@@ -80,7 +87,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  className="menu-option text-white text-xl dark:text-gray-400"
+                  className="menu-option text-p-color text-xl dark:text-gray-400"
                 >
                   Contact
                 </a>
