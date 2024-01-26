@@ -7,7 +7,6 @@ function Navbar() {
   const toggleMenu = (state: boolean) => {
     if (state !== show){ 
       setShow(state);
-      console.log("lkasjdlfksjlkdfj")
     }
     else return
 
@@ -28,6 +27,7 @@ function Navbar() {
         <nav>
           <button
             onClick={() => toggleMenu(true)}
+            onMouseEnter={() => toggleMenu(true)}
             type="button"
             className="position-toggle flex items-center justify-center w-10 h-10 text-xl text-p-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
@@ -46,10 +46,6 @@ function Navbar() {
                 )}
             
           </button>
-
-          <div onMouseEnter={() => toggleMenu(true)} className='hover-menu fixed inset-y-0 right-0 w-60'>
-
-          </div>
 
           <div
             className={`${
