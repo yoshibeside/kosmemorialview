@@ -12,6 +12,14 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      'button-color': '#D35F74',
+      'button-color-hover': '#BB5374',
+      'header-color': '#FDBE71',
+      'p-color': '#FFFFFF',
+      'button-color-border': '#A48DFF',
+      'nav-color': '#FFCC8D',
+    }
   },
   plugins: [
     tailwindcss,
