@@ -12,18 +12,6 @@ function Footer() {
 
   return (
     <>
-      <div style={{ height: '300px', width: '100%' }}>
-        <iframe
-          title="OpenStreetMap"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          style={{ border: 0 }}
-          src={`https://www.openstreetmap.org/export/embed.html?bbox=${107.6094732284546}%2C${-6.885962926014352}%2C${107.62093639373779}%2C${-6.868854214389994}&layer=mapnik&marker=${-6.877408570202181}%2C${107.61469979463256}`}
-          allowFullScreen
-        ></iframe>
-      </div>
-
       <footer className="footer-bottom" style={{ backgroundColor: '#d3d3d3', padding: '1rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <img src={"../../../ahsoska_logo.png"} alt="Logo Dago Kos" style={{ maxWidth: '20%', height: 'auto' }} />

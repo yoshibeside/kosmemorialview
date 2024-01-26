@@ -3,6 +3,7 @@ import Footer from './components/footer'
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import HomePage2 from './components/homePage2';
+import Location from './pages/location';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Home />
         <HomePage2 />
+        <Location />
         <Footer />
     </div>
  );
