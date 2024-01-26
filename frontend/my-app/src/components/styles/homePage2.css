@@ -26,7 +26,7 @@ body {
    
    #image-custom{
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: transform 0.5s ease-out;
    }
    
@@ -34,4 +34,147 @@ body {
     transform: scale(1.1);
    }
    
+   #content {
+    padding: 20px; /* Adjust this value according to your needs */
+   }
    
+   .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value according to your needs */
+    background-color: aqua;
+    background-image: url('C:/Code/PROJECT-DAGO/Project-Dago/frontend/my-app/public/clouds.gif');
+    position: relative;
+    width: 100%;
+    z-index: -90;
+
+   
+   }
+   
+   .image-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust text color based on your design */
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .overlay-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1em;
+    line-height: 1.4;
+    max-width: 300px; /* Adjust this value based on your design */
+    margin: 0 auto;
+  }
+  
+
+  .bg-kampus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('C:/Code/PROJECT-DAGO/Project-Dago/frontend/my-app/public/campusITB_BG.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind other elements */
+  }
+
+  .bg-clouds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value according to your needs */
+    background-image: url('C:/Code/PROJECT-DAGO/Project-Dago/frontend/my-app/public/clouds.gif');
+    position: relative;
+    width: 100%;
+    z-index: -90;
+  }
+
+  .small-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust text color based on your design */
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .overlay-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1em;
+    line-height: 1.4;
+    max-width: 300px; /* Adjust this value based on your design */
+    margin: 0 auto;
+  }
+  
+  /* Apply fancy font styles */
+  .overlay-text h2 {
+    font-family: 'Shorai', sans-serif;
+    font-weight: bold;
+    /* Add other font styles as needed */
+  }
+
+  .image-box:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }

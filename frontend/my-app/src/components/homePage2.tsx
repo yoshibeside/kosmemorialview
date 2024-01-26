@@ -1,16 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParallax } from 'react-scroll-parallax';
-import './styles/footer.css';
+import './styles/homePage2.css';
 
 const HomePage2 = () => {
- const parallax = useParallax({ speed: 0.5 });
+  const parallax1 = useParallax<HTMLDivElement>({
+    easing: 'easeOutQuad',
+    translateX: [-10, 0],
+  });
+  const parallax2 = useParallax<HTMLDivElement>({
+    easing: 'easeOutQuad',
+    translateX: [0, 0],
+  });
+  const parallax3 = useParallax<HTMLDivElement>({
+    easing: 'easeOutQuad',
+    translateX: [10, 0],
+  });
 
- useEffect(() => {
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  useEffect(() => {
     const handleScroll = () => {
       const rect = document.getElementById('page')?.getBoundingClientRect();
-      if (rect && rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        document.getElementById('page')?.classList.add('animate');
-      }
+      const opacity = rect
+        ? Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight))
+        : 1;
+
+      setScrollOpacity(opacity);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -18,21 +35,52 @@ const HomePage2 = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
- }, []);
+  }, []);
 
- return (
-    <div id="page">
-      <h1 id="title">Meet the best of West Java</h1>
-      <div id="content" ref={parallax.ref as React.RefObject<HTMLDivElement>}>
-        <div id="text"> Torre offers unmatched variety in West Campus in order to meet the needs of every student while providing a sky-high standard of living across the board. Whether you’re after an affordable flat with shared bedrooms, a serene private apartment, or townhome-style living with a few of your best friends, Torre has a spot for you.
+  const handleImageClick = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+    setModalOpen(true);
+  };
 
-Perched atop this enormous variety of floor plans is an entire top floor of community amenities with unbeatable views of the Austin skyline. Between the pool, hot tub, jumbotron, & more, Torre’s community spaces are the best and largest amenity area in West Campus. You can also hit the gym, take a yoga class, grab some coffee, or practice your group presentation right here at Torre.</div>
-        <img id="image-custom" src="p../../../room.jpg" alt="Boarding house"/>
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  return (
+    <div id="page" style={{ opacity: scrollOpacity }}>
+      <div className="image-container">
+        <div className="bg-kampus" />
+        <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("room.jpg")}>
+          <img src="room.jpg" alt="FirstImage" className="small-image" />
+          <div className="overlay-text">
+            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Discussion room</h2>
+          </div>
+        </div>
+        <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("room.jpg")}>
+          <img src="room.jpg" alt="SecondImage" className="small-image" />
+          <div className="overlay-text">
+            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Sleeping room</h2>
+          </div>
+        </div>
+        <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("room.jpg")}>
+          <img src="room.jpg" alt="ThirdImage" className="small-image" />
+          <div className="overlay-text">
+            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Kitchen</h2>
+          </div>
+        </div>
       </div>
+
+      {/* Image Modal/Popup */}
+      {modalOpen && (
+        <div className="modal z-index=60" onClick={handleCloseModal}>
+          <div className="modal-content">
+            <span className="close" onClick={handleCloseModal}>&times;</span>
+            <img src={selectedImage} alt="SelectedImage" />
+          </div>
+        </div>
+      )}
     </div>
- );
+  );
 };
 
 export default HomePage2;
-
-
