@@ -29,7 +29,7 @@ function Navbar() {
           <button
             onClick={() => toggleMenu(true)}
             type="button"
-            className="flex items-center justify-center mr-10 w-10 h-10 text-xl text-p-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="position-toggle flex items-center justify-center w-10 h-10 text-xl text-p-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
             {show ? (
                 <></>
@@ -47,16 +47,16 @@ function Navbar() {
             
           </button>
 
-          <div onMouseEnter={() => toggleMenu(true)} className='hover-menu fixed inset-y-0 right-0 w-64 bg-pink'>
+          <div onMouseEnter={() => toggleMenu(true)} className='hover-menu fixed inset-y-0 right-0 w-60'>
 
           </div>
 
           <div
             className={`${
             show ? 'translate-x-0' : 'translate-x-full'
-            } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-64 bg-opacity-40 bg-nav-color`}
-            onMouseOver={() => toggleMenu(true)}
-            onMouseLeave={() => toggleMenu(false)}
+            } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-60 bg-opacity-40 bg-nav-color`}
+            onPointerEnter={() => toggleMenu(true)}
+            onPointerLeave={() => toggleMenu(false)}
             >
             <ul className='mt-16'>
               <li>
