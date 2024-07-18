@@ -1,0 +1,18 @@
+.bg-location {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/location-bg.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place the background behind other elements */
+  }
+
+.animate-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+  
+@keyframes fadeIn {
+from { opacity: 0; transform: rotateY(0deg);}
+to { opacity: 1;  transform: rotateY(360deg);}
+}

@@ -14,12 +14,11 @@ function Navbar() {
 
   return (
     <>
-    <div  style={{ position: 'fixed', top: 0, width: '100%', zIndex:4}}>
+    <div  style={{ position: 'fixed', top: 0, width: '100%', zIndex:2}}>
       <div className="navbar">
         <a href="/">
-          <img
-            className="img-fluid"
-            src="../../../../text_logo.png"
+          <img className='logo'
+            src="../../../../logo-kos-memo-500.png"
             alt="Dago Student Living"
           />
         </a>

@@ -5,7 +5,7 @@ import './styles/homePage2.css';
 const HomePage2 = () => {
   const parallax1 = useParallax<HTMLDivElement>({
     easing: 'easeOutQuad',
-    translateX: [-10, 0],
+    translateX: [-7, 0],
   });
   const parallax2 = useParallax<HTMLDivElement>({
     easing: 'easeOutQuad',
@@ -13,7 +13,7 @@ const HomePage2 = () => {
   });
   const parallax3 = useParallax<HTMLDivElement>({
     easing: 'easeOutQuad',
-    translateX: [10, 0],
+    translateX: [7, 0],
   });
 
   const [scrollOpacity, setScrollOpacity] = useState(1);
@@ -46,26 +46,34 @@ const HomePage2 = () => {
     setModalOpen(false);
   };
 
+
   return (
-    <div id="page" style={{ opacity: scrollOpacity }}>
-      <div className="image-container">
+    <>
+      <div id="page" style={{ opacity: scrollOpacity }}  className="image-container flex relative h-screen justify-center items-center">
         <div className="bg-kampus" />
-        <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("room.jpg")}>
-          <img src="room.jpg" alt="FirstImage" className="small-image" />
-          <div className="overlay-text">
-            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Discussion room</h2>
-          </div>
-        </div>
-        <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("room.jpg")}>
-          <img src="room.jpg" alt="SecondImage" className="small-image" />
-          <div className="overlay-text">
-            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Sleeping room</h2>
-          </div>
-        </div>
-        <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("room.jpg")}>
-          <img src="room.jpg" alt="ThirdImage" className="small-image" />
-          <div className="overlay-text">
-            <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Kitchen</h2>
+        <div className='flex flex-col h-screen items-center justify-center'>
+          <h1 className='text-header-color md:text-7xl text-5xl font-serif md:mb-0 mb-4'>Student Spaces</h1>
+
+          <div className="md:flex image-container h-4/5">
+            <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("room.jpg")}>
+              <img src="room.jpg" alt="FirstImage" className="small-image" />
+              <div className="overlay-text">
+                <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Discussion room</h2>
+              </div>
+            </div>
+            <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("room.jpg")}>
+              <img src="room.jpg" alt="SecondImage" className="small-image" />
+              <div className="overlay-text">
+                <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Sleeping room</h2>
+              </div>
+            </div>
+            <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("room.jpg")}>
+              <img src="room.jpg" alt="ThirdImage" className="small-image" />
+              <div className="overlay-text">
+                <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Kitchen</h2>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -75,11 +83,12 @@ const HomePage2 = () => {
         <div className="modal z-index=60" onClick={handleCloseModal}>
           <div className="modal-content">
             <span className="close" onClick={handleCloseModal}>&times;</span>
-            <img src={selectedImage} alt="SelectedImage" />
+            <img src={selectedImage} alt="SelectedImage" className='h-96' />
           </div>
         </div>
       )}
-    </div>
+    </>
+ 
   );
 };
 

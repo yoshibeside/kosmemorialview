@@ -1,7 +1,7 @@
 #header {
     position: absolute;
     width: 100%;
-    height: 90%; /* Adjust the height as needed (20% of the viewport height) */
+    height: 100vh; /* Adjust the height as needed (20% of the viewport height) */
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh; /* Adjust the height as needed (3/4 of the viewport height) */
+    height: 100vh; /* Adjust the height as needed (3/4 of the viewport height) */
     object-fit: cover; /* Ensure the video covers the specified height */
     z-index: -1; /* Place it behind other content */
 }
@@ -29,7 +29,6 @@
 .header-text {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     opacity: 1;
-    font-size: 3.5vmax ;
 }
 
 .header-child-button {

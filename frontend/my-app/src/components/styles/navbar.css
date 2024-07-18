@@ -8,8 +8,24 @@
     justify-content: space-between;
 }
 
-.navbar a img {
+.navbar a  {
     width: 15vmax;
+    height:fit-content;
+}
+
+.logo {
+    max-width: 8rem;
+    max-height: 8rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+@media (max-width: 767px) {
+    .logo {
+        max-width: 6rem;
+        max-height: 6rem;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
 }
 
 .menu-option {

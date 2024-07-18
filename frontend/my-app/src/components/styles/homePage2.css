@@ -38,26 +38,37 @@ body {
     padding: 20px; /* Adjust this value according to your needs */
    }
    
-   .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust this value according to your needs */
-    background-color: aqua;
-    background-image: url('../../../public/clouds.gif');
-    position: relative;
-    width: 100%;
-    z-index: -90;
 
-   
-   }
-   
    .image-box {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     margin: 0 10px;
   }
+
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+   @media (max-width: 767px) {
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .image-box {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+}
   
   .overlay-text {
     position: absolute;
@@ -88,7 +99,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../public/campusITB_BG.png');
+    background-image: url('../../../public/home2-bg.png');
     background-size: cover;
     background-position: center;
     z-index: -1; /* Place the background behind other elements */
@@ -109,7 +120,6 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: transform 0.3s ease-out;
   }
   
   .overlay-text {

@@ -19,6 +19,11 @@ module.exports = {
       'p-color': '#FFFFFF',
       'button-color-border': '#A48DFF',
       'nav-color': '#FFCC8D',
+      'theme-color': 'gray',
+      'card-color': '#FFFFFF',
+      'link-color': '#3492eb',
+      'wrong-color': 'red',
+      'correct-color': 'green',
     }
   },
   plugins: [
