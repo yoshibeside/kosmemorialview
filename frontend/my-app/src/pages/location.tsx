@@ -5,6 +5,8 @@ import {APIProvider, Map, AdvancedMarker, Pin} from '@vis.gl/react-google-maps';
 function Location() {
 
     const [isVisible, setIsVisible] = useState(true);
+    const [scrollOpacity, setScrollOpacity] = useState(1);
+
 
     useEffect(() => {
       const observer = new IntersectionObserver(entries => {
@@ -20,9 +22,27 @@ function Location() {
     
       return () => observer.unobserve(rotatingText); // Clean up on unmount
     }, []);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const rect = document.getElementById('pagelocation')?.getBoundingClientRect();
+        const opacity = rect
+          ? Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight))
+          : 1;
+  
+        setScrollOpacity(opacity);
+        console.log(opacity)
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
     
     return (
-      <div className="flex h-screen">
+      <div id='pagelocation' className="flex h-screen" style={{ opacity: scrollOpacity }}>
         <div className="bg-location"/>
         <div className='w-1/2'>
           <APIProvider apiKey={'AIzaSyBswx-ajnlGq5F3bwCvT8IQDxk85WRemyw'} onLoad={() => console.log('Maps API has loaded.')}>
@@ -44,9 +64,9 @@ function Location() {
           <div className="md:w-1/2 w-4/5 text-right align-center items-center text-pretty">
             <h1 className='text-header-color md:text-7xl text-5xl font-serif'>The Perfect Balance</h1>
             <br></br>
-            <p className='header-child-text text-p-color md:text-base text-sm font-thin'>Our residence offers the ideal balance between academic focus and vibrant city life. Immerse yourself in the energy of Bandung's student scene while maintaining easy access to your campus and study resources – all within a short ride away.</p>
+            <p className='header-child-text text-p-color md:text-base text-sm font-text'>Our residence offers first of the class (kost) in Dago. Perfect for students and where home is a corner away. Immerse yourself in the energy of Bandung's student scene while maintaining easy access to your campus and study resources – all within a short ride away.</p>
             <br></br>
-            <p className='header-child-text text-p-color md:text-base text-sm'>Lupakan perjalanan jauh! Tempat tinggal kami terletak ideal di dekat kampus-kampus utama. Saat Anda membutuhkan waktu istirahat belajar, makanan lezat, atau hiburan, Anda bisa mendapatkannya disini. </p>
+            <p className='header-child-text text-p-color md:text-base font-text text-sm'>Lupakan perjalanan jauh! Tempat tinggal kami terletak ideal di dekat kampus-kampus utama. Saat Anda membutuhkan waktu istirahat belajar, makanan lezat, atau hiburan, Anda bisa mendapatkannya disini. </p>
             <br></br>
             <a className="text-link-color font-bold text-right" href="https://maps.app.goo.gl/VaSEDV9ib97FYF9RA?g_st=iw"> Open in Google Maps </a>
           </div>

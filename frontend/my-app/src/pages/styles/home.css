@@ -39,6 +39,10 @@
     background-color: transparent;
 }
 
+.font-text {
+    font-family:"Calibri", sans-serif;
+} 
+
 
 /* .header-child-button::before,
 .header-child-button::after {
