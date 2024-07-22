@@ -1,19 +1,22 @@
 import './App.css';
-import Footer from './components/footer'
+import Landingpage from './pages/landingpage';
 import Navbar from './components/navbar';
-import Home from './pages/home';
-import HomePage2 from './components/homePage2';
-import Location from './pages/location';
+import ProtectedRoute from './pages/protectedpage';
+import { Routes, Route, BrowserRouter as Router  } from "react-router-dom";
+import Floorplan from './pages/floorplan';
 
 
 function App() {
  return (
     <div id="body-content">
         <Navbar />
-        <Home />
-        <HomePage2 />
-        <Location />
-        <Footer />
+        <Router>
+            <Routes>
+                <Route path="/" element={<Landingpage />} />
+                <Route path="/floorplan" element={<Floorplan />} />
+                <Route path="*" element={<ProtectedRoute />} />
+            </Routes>
+        </Router>
     </div>
  );
 }

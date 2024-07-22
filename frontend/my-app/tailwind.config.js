@@ -24,6 +24,7 @@ module.exports = {
       'link-color': '#3492eb',
       'wrong-color': 'red',
       'correct-color': 'green',
+      'hover-gray-color': '#5F5A5A'
     }
   },
   plugins: [

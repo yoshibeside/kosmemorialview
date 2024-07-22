@@ -1,0 +1,23 @@
+.bgfloorplan{
+    background-image:  url('../../../public/img-room.jpg');
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.headerpage {
+    margin-top: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .headerpage {
+        margin-top: 25%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        z-index: 1;
+    }
+}

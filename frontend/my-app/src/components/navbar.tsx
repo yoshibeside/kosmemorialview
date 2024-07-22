@@ -14,21 +14,21 @@ function Navbar() {
 
   return (
     <>
-    <div  style={{ position: 'fixed', top: 0, width: '100%', zIndex:2}}>
+    <div  style={{ width: '100%', zIndex:2}}>
       <div className="navbar">
         <a href="/">
           <img className='logo'
-            src="../../../../logo-kos-memo-500.png"
+            src="../../../../logo-kos-rapi.png"
             alt="Dago Student Living"
           />
         </a>
 
-        <nav>
+        <nav className='fixed top-0 right-0 bottom-0 mt-12'>
           <button
             onClick={() => toggleMenu(true)}
             onMouseEnter={() => toggleMenu(true)}
             type="button"
-            className="position-toggle flex items-center justify-center w-10 h-10 text-xl text-p-color dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="position-toggle flex items-center justify-center w-10 h-10 text-xl text-p-color"
           >
             {show ? (
                 <></>
@@ -73,7 +73,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/floorplan"
                   className="menu-option text-p-color text-xl dark:text-gray-400"
                 >
                   Floor Plan
