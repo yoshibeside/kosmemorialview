@@ -1,0 +1,13 @@
+.headerpage {
+    margin-top: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    z-index: 1;
+}
+
+.container {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}

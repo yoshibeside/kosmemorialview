@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import ProtectedRoute from './pages/protectedpage';
 import { Routes, Route, BrowserRouter as Router  } from "react-router-dom";
 import Floorplan from './pages/floorplan';
+import Amenities from './pages/amenities';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Landingpage />} />
                 <Route path="/floorplan" element={<Floorplan />} />
+                <Route path='/amenities' element={<Amenities />} />
                 <Route path="*" element={<ProtectedRoute />} />
             </Routes>
         </Router>
