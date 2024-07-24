@@ -81,7 +81,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/contact"
                   className="menu-option text-p-color text-xl dark:text-gray-400"
                 >
                   Contact

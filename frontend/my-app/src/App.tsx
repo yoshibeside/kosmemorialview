@@ -5,6 +5,7 @@ import ProtectedRoute from './pages/protectedpage';
 import { Routes, Route, BrowserRouter as Router  } from "react-router-dom";
 import Floorplan from './pages/floorplan';
 import Amenities from './pages/amenities';
+import Contact from './pages/contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/" element={<Landingpage />} />
                 <Route path="/floorplan" element={<Floorplan />} />
                 <Route path='/amenities' element={<Amenities />} />
+                <Route path='/contact' element={<Contact />} />
                 <Route path="*" element={<ProtectedRoute />} />
             </Routes>
         </Router>

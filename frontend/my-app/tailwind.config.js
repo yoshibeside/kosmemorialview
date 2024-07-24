@@ -11,7 +11,11 @@ module.exports = {
       "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bitter': ['Bitter', 'serif'],
+      }
+    },
     colors: {
       'button-color': '#D35F74',
       'button-color-hover': '#BB5374',
@@ -24,7 +28,8 @@ module.exports = {
       'link-color': '#3492eb',
       'wrong-color': 'red',
       'correct-color': 'green',
-      'hover-gray-color': '#5F5A5A'
+      'hover-gray-color': '#5F5A5A',
+      'highlight-color': '#32a852',
     }
   },
   plugins: [
