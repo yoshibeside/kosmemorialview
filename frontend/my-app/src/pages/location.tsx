@@ -5,7 +5,7 @@ import {APIProvider, Map, AdvancedMarker, Pin} from '@vis.gl/react-google-maps';
 function Location() {
 
     const [isVisible, setIsVisible] = useState(true);
-    const [scrollOpacity, setScrollOpacity] = useState(1);
+    // const [scrollOpacity, setScrollOpacity] = useState(1);
 
 
     useEffect(() => {
@@ -23,26 +23,26 @@ function Location() {
       return () => observer.unobserve(rotatingText); // Clean up on unmount
     }, []);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        const rect = document.getElementById('pagelocation')?.getBoundingClientRect();
-        const opacity = rect
-          ? Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight))
-          : 1;
+    // useEffect(() => {
+    //   const handleScroll = () => {
+    //     const rect = document.getElementById('pagelocation')?.getBoundingClientRect();
+    //     const opacity = rect
+    //       ? Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight))
+    //       : 1;
   
-        setScrollOpacity(opacity);
-        console.log(opacity)
-      };
+    //     setScrollOpacity(opacity);
+    //     console.log(opacity)
+    //   };
   
-      window.addEventListener('scroll', handleScroll);
+    //   window.addEventListener('scroll', handleScroll);
   
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+    //   return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //   };
+    // }, []);
     
     return (
-      <div id='pagelocation' className="flex h-screen" style={{ opacity: scrollOpacity }}>
+      <div id='pagelocation' className="flex h-screen">
         <div className="bg-location"/>
         <div className='w-1/2'>
           <APIProvider apiKey={'AIzaSyBswx-ajnlGq5F3bwCvT8IQDxk85WRemyw'} onLoad={() => console.log('Maps API has loaded.')}>

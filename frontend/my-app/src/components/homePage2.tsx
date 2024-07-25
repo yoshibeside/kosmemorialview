@@ -55,20 +55,20 @@ const HomePage2 = () => {
           <h1 className='text-header-color md:text-7xl text-5xl font-serif md:mb-0 mb-4'>Student Spaces</h1>
 
           <div className="md:flex image-container h-4/5">
-            <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("room.jpg")}>
-              <img src="room.jpg" alt="FirstImage" className="small-image" />
+            <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("rooftop5.jpg")}>
+              <img src="rooftop5.jpg" alt="FirstImage" className="small-image" />
               <div className="overlay-text">
-                <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Discussion room</h2>
+                <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Communal Area</h2>
               </div>
             </div>
-            <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("room.jpg")}>
-              <img src="room.jpg" alt="SecondImage" className="small-image" />
+            <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("typec3.jpg")}>
+              <img src="typec3.jpg" alt="SecondImage" className="small-image" />
               <div className="overlay-text">
                 <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Sleeping room</h2>
               </div>
             </div>
-            <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("room.jpg")}>
-              <img src="room.jpg" alt="ThirdImage" className="small-image" />
+            <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("rooftop2.jpg")}>
+              <img src="rooftop2.jpg" alt="ThirdImage" className="small-image" />
               <div className="overlay-text">
                 <h2 style={{ fontFamily: 'Courier New', fontWeight: 'bold' }}>Kitchen</h2>
               </div>

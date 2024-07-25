@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(#272019, #9b7f66);
+    background-image: linear-gradient(  #544f3f, rgb(28, 29, 31));
+
   }
 
 .social-icon {

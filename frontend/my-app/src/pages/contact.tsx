@@ -11,22 +11,18 @@ function Contact() {
     };
 
     const faqData = [
-        { question: "Question 1", answer: "Answer 1 this is my answer. To be tryly honest i don't think of a nything else.  This is jst for the  animation in tha paragraf. I want to see how it looks l ike if it's very very long okya? don't mind this sentences it's just nothing nothing wrong kok." },
-        { question: "Question 2", answer: "Answer 2" },
-        { question: "Question 3", answer: "Answer 3" },
-        { question: "Question 4", answer: "Answer 4" },
-        { question: "Question 5", answer: "Answer 5" },
-        { question: "Question 6", answer: "Answer 6" },
-        { question: "Question 7", answer: "Answer 7" },
-        { question: "Question 8", answer: "Answer 8" },
-        { question: "Question 9", answer: "Answer 9" },
-        { question: "Question 10", answer: "Answer 10" },
-        // ... more FAQ items
+        { question: "Minimal waktu sewa berapa?", answer: "Masa sewa minimal adalah 1 tahun" },
+        { question: "Pembayaran setiap berapa bulan?", answer: "Sekali pembayaran adalah setiap 2 bulan. Dengan pembayaran pertama kali adalah 3 bulan yang mana 1 bulan merupakan deposit yang akan dikembalikan pada masa akhir sewa. Jika penghuni keluar sebelum masa akhir sewa, uang deposit hangus." },
+        { question: "Apakah sudah termasuk listrik?", answer: "Tidak, listrik setiap kamar menggunakan token" },
+        { question: "Fasilitas yang tersedia pada setiap lantai apa?", answer: "Communal area, dapur, kulkas, dispenser, dan microwave (untuk setiap 2 lantai)" },
+        { question: "Boleh membawa teman yang bukan lawan jenis ke kamar?", answer: "Tamu yang datang sebaiknya dilaporkan terlebih dahulu. Dilarang membawa masuk kamar teman lawan jenis." },
+        { question: "Apakah parkiran gratis?", answer: "Tidak, parkiran untuk mobil Rp200.000/bulan, untuk motor 100.000/bulan" },
+        { question: "Apakah tersedia jasa laundry?", answer: "Iya, jasa laundry dan cleaning service sepaket dengan harga Rp 150.000/bulan" },
       ];
 
 
     return(<> 
-            <div className='w-full h-full flex flex-col items-center justify-center' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)'}}>
+            <div className='w-full h-full flex flex-col items-center justify-center bgcontact'>
 
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 w-11/12 mt-28 mb-8'>
                     <div>

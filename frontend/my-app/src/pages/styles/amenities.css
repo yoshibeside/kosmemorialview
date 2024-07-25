@@ -21,3 +21,7 @@
     transform: translateY(0%);
     transition: transform 0.5s ease-in-out  
 }
+
+.bgcontact {
+    background-image: linear-gradient( rgb(28, 29, 31), #544f3f);
+}
