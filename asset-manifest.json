@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kosmemorialview/static/css/main.d2147bfa.css",
+    "main.js": "/kosmemorialview/static/js/main.e1b39d73.js",
+    "static/media/img-room.png": "/kosmemorialview/static/media/img-room.4799a319ea416abfb431.png",
+    "index.html": "/kosmemorialview/index.html",
+    "main.d2147bfa.css.map": "/kosmemorialview/static/css/main.d2147bfa.css.map",
+    "main.e1b39d73.js.map": "/kosmemorialview/static/js/main.e1b39d73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2147bfa.css",
+    "static/js/main.e1b39d73.js"
+  ]
+}
