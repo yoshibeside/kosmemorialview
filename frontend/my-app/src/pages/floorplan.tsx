@@ -37,7 +37,7 @@ function Floorplan() {
         typeB:
         ['./bg-dark1.png', './bg-dark2.png', './campusITB.jpeg', './campusITB_BG.png'],
         typeC:
-        ['./typec1.jpg', './typec2.jpg', './typec3.jpg', './typec4.jpg', './typec5.jpg', './typec6.jpg'],
+        ['./typec1.png', './typec2.png', './typec3.png', './typec4.png', './typec5.png', './typec6.png'],
     }
     
 
@@ -73,19 +73,19 @@ function Floorplan() {
     const imgFloor = () => {
         if (selected === 'Floor 1') {
             return (
-                <img src='./denah1.jpg' alt='floorplan' className='w-10/12'/>
+                <img src='./denah1.png' alt='floorplan' className='w-10/12'/>
             )
         } else if (selected === 'Floor 2') {
             return (
-                <img src='./denah2.jpg' alt='floorplan' className='w-10/12'/>
+                <img src='./denah2.png' alt='floorplan' className='w-10/12'/>
             )
         } else if (selected === 'Floor 3') {
             return (
-                <img src='./denah3.jpg' alt='floorplan' className='w-10/12'/>
+                <img src='./denah3.png' alt='floorplan' className='w-10/12'/>
             )
         } else if (selected === 'Floor 4') {
             return (
-                <img src='./denah4.jpg' alt='floorplan' className='w-10/12'/>
+                <img src='./denah4.png' alt='floorplan' className='w-10/12'/>
             )
         }
     }
@@ -119,11 +119,11 @@ function Floorplan() {
     const roomTypePrice = () => {
         if (selected != 'Floor 4') {
             return (
-                <li className='mx-4 text-p-color text-sm '>Rp. 3.500.000</li>
+                <li className='mx-4 text-p-color text-sm '>Rp. 3.500.000/bulan</li>
             )
         } else {
             return (
-                <li className='mx-4 text-p-color text-sm '>Rp. 3.700.000</li>
+                <li className='mx-4 text-p-color text-sm '>Rp. 3.700.000/bulan</li>
             )
         }
     }
@@ -132,7 +132,7 @@ function Floorplan() {
     
         if (typeRoom === 'A') {
             return (
-                <img src={img_denah.typeA[num]} alt='floorplan' className='md:h-72 md:w-96 h-64 w-72'/>
+                <img src={img_denah.typeC[num]} alt='floorplan' className='md:h-72 md:w-96 h-64 w-72'/>
             )
         } else if (typeRoom === 'B') {
             return (
@@ -148,7 +148,7 @@ function Floorplan() {
     const picIndex = () => {
         var pics = []
         if (typeRoom === 'A') {
-            for (let i = 0; i < img_denah.typeA.length; i++) {
+            for (let i = 0; i < img_denah.typeC.length; i++) {
                 if (i === indexPicRoom) {
                     pics.push(
                     <svg className='w-3 mt-2' viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +225,7 @@ function Floorplan() {
             <div className='w-full h-full pb-12 random-image' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)'}}>
 
                 <div className='headerpage'>
-                    <h1 className='text-header-color md:text-7xl text-5xl font-serif'>Floor Plans </h1>
+                    <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>Floor Plans </h1>
                     <div id='gendercategory' className="mt-8 grid grid grid-cols-2 gap-4 bg-text-link-color text-p-color">
                         <button className='text-center' onMouseEnter={()=>{onEnterMouse(0)}} onMouseLeave={()=>{onLeaveMouse()}} onClick={()=>{setCurrentPlan(0); setSelected('Floor 1');}}>
                             <p>Female Floors</p>

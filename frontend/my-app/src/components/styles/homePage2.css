@@ -111,7 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust this value according to your needs */
-    background-image: url('../../../public/clouds.gif');
+
     position: relative;
     width: 100%;
     z-index: -90;

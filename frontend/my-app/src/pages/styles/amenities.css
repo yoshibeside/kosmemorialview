@@ -5,6 +5,10 @@
     z-index: 1;
 }
 
+.bg-amenities {
+    background-image: linear-gradient( rgb(62, 111, 203), #544f3f);
+}
+
 .container {
     justify-content: space-evenly;
     justify-items: center;
@@ -23,5 +27,13 @@
 }
 
 .bgcontact {
-    background-image: linear-gradient( rgb(28, 29, 31), #544f3f);
+    background-image: linear-gradient( rgb(74, 75, 77), #544f3f);
+}
+
+.image-container {
+    overflow: hidden;
+}
+  
+.hover-animate:hover {
+    transform: scale(1.1);transition: transform 0.3s ease-out;
 }

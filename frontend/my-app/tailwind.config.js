@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'bitter': ['Bitter', 'serif'],
+        'martionmono': ['Martion Mono', 'monospace'],
       }
     },
     colors: {

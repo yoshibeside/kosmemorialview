@@ -49,15 +49,15 @@ function Navbar() {
           <div
             className={`${
             show ? 'translate-x-0' : 'translate-x-full'
-            } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-60 bg-opacity-40 bg-nav-color`}
+            } transform transition-transform duration-300 ease-in-out fixed inset-y-0 right-0 w-52 bg-nav-color`}
             onPointerEnter={() => toggleMenu(true)}
             onPointerLeave={() => toggleMenu(false)}
             >
-            <ul className='mt-16'>
-              <li>
+            <ul className='mt-16 flex justify-center flex-col'>
+              <li className='max-w-full min-w-full'>
                 <a
                   href="/"
-                  className="menu-option select-menu mt-40 text-xl text-p-color dark:bg-blue-600"
+                  className="menu-option min-w-full font-semibold mt-40 text-xl text-p-color dark:bg-blue-600"
                   aria-current="page"
                 >
                   Home
@@ -66,7 +66,7 @@ function Navbar() {
               <li>
                 <a
                   href="/amenities"
-                  className="menu-option text-p-color text-xl dark:text-gray-400"
+                  className="menu-option min-w-full  font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Ameneties
                 </a>
@@ -74,7 +74,7 @@ function Navbar() {
               <li>
                 <a
                   href="/floorplan"
-                  className="menu-option text-p-color text-xl dark:text-gray-400"
+                  className="menu-option min-w-full font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Floor Plan
                 </a>
@@ -82,7 +82,7 @@ function Navbar() {
               <li>
                 <a
                   href="/contact"
-                  className="menu-option text-p-color text-xl dark:text-gray-400"
+                  className="menu-option min-w-full font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Contact
                 </a>
