@@ -2,6 +2,12 @@ import './styles/floorplan.css'
 import { useState, useEffect } from 'react';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
+import typec1 from '../assets/images/typec1.png'
+import typec2 from '../assets/images/typec2.png'
+import typec3 from '../assets/images/typec3.png'
+import typec4 from '../assets/images/typec4.png'
+import typec5 from '../assets/images/typec5.png'
+import typec6 from '../assets/images/typec6.png'
 
 function Floorplan() {
 
@@ -34,12 +40,8 @@ function Floorplan() {
     }
 
     const img_denah = {
-        typeA:
-        ['./bg-dark1.png', './bg-dark2.png', './campusITB.jpeg', './campusITB_BG.png'],
-        typeB:
-        ['./bg-dark1.png', './bg-dark2.png', './campusITB.jpeg', './campusITB_BG.png'],
         typeC:
-        ['./typec1.png', './typec2.png', './typec3.png', './typec4.png', './typec5.png', './typec6.png'],
+        [typec1, typec2, typec3, typec4, typec5, typec6],
     }
     
 
@@ -70,26 +72,6 @@ function Floorplan() {
     const pickOne = (item: string) => {
         setSelected(item);
         setIsOpen(false);
-    }
-
-    const imgFloor = () => {
-        if (selected === 'Floor 1') {
-            return (
-                <img src='./denah1.png' alt='floorplan' className='w-10/12'/>
-            )
-        } else if (selected === 'Floor 2') {
-            return (
-                <img src='./denah2.png' alt='floorplan' className='w-10/12'/>
-            )
-        } else if (selected === 'Floor 3') {
-            return (
-                <img src='./denah3.png' alt='floorplan' className='w-10/12'/>
-            )
-        } else if (selected === 'Floor 4') {
-            return (
-                <img src='./denah4.png' alt='floorplan' className='w-10/12'/>
-            )
-        }
     }
 
     useEffect(() => {
@@ -136,11 +118,8 @@ function Floorplan() {
             return (
                 <img src={img_denah.typeC[num]} alt='floorplan' className='md:h-72 md:w-96 h-64 w-72'/>
             )
-        } else if (typeRoom === 'B') {
-            return (
-                <img src={img_denah.typeB[num]} alt='roomB' className='md:h-72 md:w-96 h-64 w-72'/>
-            )
-        } else if (typeRoom === 'C') {
+        } 
+        else if (typeRoom === 'C') {
             return (
                 <img src={img_denah.typeC[num]} alt='roomC' className='md:h-72 md:w-96 h-64 w-72'/>
             )
@@ -187,7 +166,7 @@ function Floorplan() {
 
     const rightClick = () => {
         if (typeRoom === 'A') {
-            if (indexPicRoom < img_denah.typeA.length - 1) {
+            if (indexPicRoom < img_denah.typeC.length - 1) {
                 setIndexPicRoom(indexPicRoom + 1)
             } else {
                 setIndexPicRoom(0)
@@ -204,7 +183,7 @@ function Floorplan() {
     const leftClick = () => {
         if (typeRoom === 'A') {
             if (indexPicRoom - 1 < 0) {
-                setIndexPicRoom(img_denah.typeA.length - 1)
+                setIndexPicRoom(img_denah.typeC.length - 1)
             } else {
                 setIndexPicRoom(indexPicRoom - 1)
             }

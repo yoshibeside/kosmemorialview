@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParallax } from 'react-scroll-parallax';
 import './styles/homePage2.css';
+import typec3 from '../assets/images/typec1.png';
+import rooftop5 from '../assets/images/rooftop5.png';
+import rooftop2 from '../assets/images/rooftop2.png';
 
 const HomePage2 = () => {
   const parallax1 = useParallax<HTMLDivElement>({
@@ -58,20 +61,20 @@ const HomePage2 = () => {
           </div>
           
           <div className="md:flex image-container h-4/5">
-            <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick("rooftop5.png")}>
-              <img src="rooftop5.png" alt="FirstImage" className="small-image" />
+            <div className="image-box" ref={parallax1.ref} onClick={() => handleImageClick(rooftop5)}>
+              <img src={rooftop5} alt="FirstImage" className="small-image" />
               <div className="overlay-text">
               <h2 className='font-marionmono font-thin p-2 bg-hover-gray-color bg-opacity-75 '>Communal Area</h2>
               </div>
             </div>
-            <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick("typec3.png")}>
-              <img src="typec3.png" alt="SecondImage" className="small-image" />
+            <div className="image-box" ref={parallax2.ref} onClick={() => handleImageClick(typec3)}>
+              <img src={typec3} alt="SecondImage" className="small-image" />
               <div className="overlay-text">
                 <h2 className='font-marionmono font-thin p-2 bg-hover-gray-color bg-opacity-75 '>Sleeping room</h2>
               </div>
             </div>
-            <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick("rooftop2.png")}>
-              <img src="rooftop2.png" alt="ThirdImage" className="small-image" />
+            <div className="image-box" ref={parallax3.ref} onClick={() => handleImageClick(rooftop2)}>
+              <img src={rooftop2} alt="ThirdImage" className="small-image" />
               <div className="overlay-text">
                 <h2 className='font-marionmono font-thin p-2 bg-hover-gray-color bg-opacity-75 '>Kitchen</h2>
               </div>

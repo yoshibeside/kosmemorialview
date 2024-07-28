@@ -3,6 +3,15 @@ import '../components/styles/homePage2.css'
 import Footer from '../components/footer';
 import { useState } from 'react';
 import Navbar from '../components/navbar';
+import rooftop1 from '../assets/images/rooftop1.png'
+import rooftop2 from '../assets/images/rooftop2.png'
+import rooftop3 from '../assets/images/rooftop3.png'
+import basement from '../assets/images/basement.png'
+import terasdepan from '../assets/images/terasdepan.png'
+import kitchen from '../assets/images/kitchen.png'
+import window from '../assets/images/window.png'
+import airkulkas from '../assets/images/airkulkas.png'
+import laundry from '../assets/images/laundry.png'
 
 function Amenities() {
 
@@ -33,15 +42,15 @@ function Amenities() {
                 </div>
 
                 <div className='grid md:grid-cols-3 grid-cols-1 container gap-4'>
-                <img onClick={()=>handleImageClick("rooftop1.png")} src='./rooftop1.png' alt='floorplan' className='hover-animate w-10/12 h-48'/>
-                <img onClick={()=>handleImageClick("rooftop2.png")} src='./rooftop2.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("rooftop3.png")} src='./rooftop3.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("basement.png")} src='./basement.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("terasdepan.png")} src='./terasdepan.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("kitchen.png")} src='./kitchen.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("window.png")} src='./window.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("airkulkas.png")} src='./airkulkas.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick("laundry.png")} src='./laundry.png' alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(rooftop1)} src={rooftop1} alt='floorplan' className='hover-animate w-10/12 h-48'/>
+                <img onClick={()=>handleImageClick(rooftop2)} src={rooftop2} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(rooftop3)} src={rooftop3} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(basement)} src={basement} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(terasdepan)} src={terasdepan} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(kitchen)} src={kitchen} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(window)} src={window} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(airkulkas)} src={airkulkas} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(laundry)} src={laundry} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
 
                 </div>
             </div>

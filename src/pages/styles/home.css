@@ -43,7 +43,6 @@
     font-family:"Calibri", sans-serif;
 }
 #bg-landingpage {
-  background-image:  url('../../../public/img-room.png');
   width: max-content;
   height:60%;
   background-size: contain;

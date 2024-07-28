@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles/navbar.css';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/images/logo-kos-rapi.png';
+import logo from '../assets/images/logo-kos-rapi.png'
 
 function Navbar() {
   const [show, setShow] = useState(false);

@@ -1,5 +1,7 @@
 import './styles/home.css'
 import { useNavigate } from 'react-router-dom';
+import vid from '../assets/video/vid_website.mp4'
+
 function Home() {
     const navigate = useNavigate();
 
@@ -7,7 +9,7 @@ function Home() {
             <div id="header" >
             </div>
             <video autoPlay id="video-background" muted loop >
-                <source src="../../../video for website.mp4" type="video/mp4" />
+                <source src={vid}  />
             </video>
             <div id="header-page">
                 <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>University Lodge</h1>
