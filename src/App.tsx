@@ -2,7 +2,7 @@ import './App.css';
 import Landingpage from './pages/landingpage';
 import Navbar from './components/navbar';
 import ProtectedRoute from './pages/protectedpage';
-import { Routes, Route, BrowserRouter as Router  } from "react-router-dom";
+import { Routes, Route, HashRouter as Router  } from "react-router-dom";
 import Floorplan from './pages/floorplan';
 import Amenities from './pages/amenities';
 import Contact from './pages/contact';
