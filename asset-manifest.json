@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kosmemorialview/static/css/main.77487d7c.css",
-    "main.js": "/kosmemorialview/static/js/main.fe2ad9f4.js",
+    "main.js": "/kosmemorialview/static/js/main.08b06698.js",
     "static/media/vid_website.mp4": "/kosmemorialview/static/media/vid_website.f1368d24f4dca0352455.mp4",
     "static/media/terasdepan.png": "/kosmemorialview/static/media/terasdepan.a70b3a145ec3bd8db088.png",
     "static/media/basement.png": "/kosmemorialview/static/media/basement.40af6b0fd269c030bcf5.png",
@@ -22,10 +22,10 @@
     "static/media/logo-kos-rapi.png": "/kosmemorialview/static/media/logo-kos-rapi.30bf5eb8f9076d9bf5d2.png",
     "index.html": "/kosmemorialview/index.html",
     "main.77487d7c.css.map": "/kosmemorialview/static/css/main.77487d7c.css.map",
-    "main.fe2ad9f4.js.map": "/kosmemorialview/static/js/main.fe2ad9f4.js.map"
+    "main.08b06698.js.map": "/kosmemorialview/static/js/main.08b06698.js.map"
   },
   "entrypoints": [
     "static/css/main.77487d7c.css",
-    "static/js/main.fe2ad9f4.js"
+    "static/js/main.08b06698.js"
   ]
 }
