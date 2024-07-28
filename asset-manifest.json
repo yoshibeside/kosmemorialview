@@ -1,31 +1,31 @@
 {
   "files": {
     "main.css": "/kosmemorialview/static/css/main.efd541c3.css",
-    "main.js": "/kosmemorialview/static/js/main.e2faa82d.js",
+    "main.js": "/kosmemorialview/static/js/main.ed2f904b.js",
     "static/media/vid_website.mp4": "/kosmemorialview/static/media/vid_website.f1368d24f4dca0352455.mp4",
-    "static/media/terasdepan.png": "/kosmemorialview/static/media/terasdepan.729d9eba3025313e36a0.png",
-    "static/media/basement.png": "/kosmemorialview/static/media/basement.d66109180755b9129a0a.png",
-    "static/media/rooftop3.png": "/kosmemorialview/static/media/rooftop3.72be0ae0695f897d4ced.png",
-    "static/media/laundry.png": "/kosmemorialview/static/media/laundry.3e947197d046334fe80e.png",
-    "static/media/typec5.png": "/kosmemorialview/static/media/typec5.d359b85d2719eb9d94fb.png",
-    "static/media/rooftop1.png": "/kosmemorialview/static/media/rooftop1.dd005de877d5eb67363c.png",
-    "static/media/airkulkas.png": "/kosmemorialview/static/media/airkulkas.11c6c376573fc6fbbfaa.png",
-    "static/media/rooftop2.png": "/kosmemorialview/static/media/rooftop2.a7480c3651515dc7ffe9.png",
-    "static/media/typec3.png": "/kosmemorialview/static/media/typec3.6f5d1fe4a1c8320dfcf8.png",
-    "static/media/typec4.png": "/kosmemorialview/static/media/typec4.9520df945e14309795a0.png",
-    "static/media/typec2.png": "/kosmemorialview/static/media/typec2.25c6abad67b6308df662.png",
-    "static/media/typec1.png": "/kosmemorialview/static/media/typec1.329636a8d4baea7ad848.png",
-    "static/media/rooftop5.png": "/kosmemorialview/static/media/rooftop5.57e0b3a0d80f7824cf2f.png",
-    "static/media/window.png": "/kosmemorialview/static/media/window.c4d49afc20a625603102.png",
-    "static/media/typec6.png": "/kosmemorialview/static/media/typec6.373a557156c43fd5aeec.png",
-    "static/media/kitchen.png": "/kosmemorialview/static/media/kitchen.e342fc6e5e652b750511.png",
-    "static/media/logo-kos-rapi.png": "/kosmemorialview/static/media/logo-kos-rapi.7771f2f068555f43b6e3.png",
+    "static/media/terasdepan.png": "/kosmemorialview/static/media/terasdepan.a70b3a145ec3bd8db088.png",
+    "static/media/basement.png": "/kosmemorialview/static/media/basement.40af6b0fd269c030bcf5.png",
+    "static/media/typec5.png": "/kosmemorialview/static/media/typec5.e9b1be90cc979dd1343c.png",
+    "static/media/rooftop5.png": "/kosmemorialview/static/media/rooftop5.7850c8bde891a314e8bf.png",
+    "static/media/laundry.png": "/kosmemorialview/static/media/laundry.8c4fbe189b1dd816f01b.png",
+    "static/media/typec4.png": "/kosmemorialview/static/media/typec4.1f57f7a3fb08b1f1e6ac.png",
+    "static/media/rooftop1.png": "/kosmemorialview/static/media/rooftop1.c99131df49db15ac7ff2.png",
+    "static/media/airkulkas.png": "/kosmemorialview/static/media/airkulkas.cec08fd9bc779b3f5b59.png",
+    "static/media/rooftop2.png": "/kosmemorialview/static/media/rooftop2.2f388219095c47103adf.png",
+    "static/media/rooftop3.png": "/kosmemorialview/static/media/rooftop3.137a8129119aa07a0ebd.png",
+    "static/media/typec3.png": "/kosmemorialview/static/media/typec3.a0401c3291ec6811cca5.png",
+    "static/media/typec2.png": "/kosmemorialview/static/media/typec2.39b02d874226835c7805.png",
+    "static/media/window.png": "/kosmemorialview/static/media/window.63673e97689aa8afb24f.png",
+    "static/media/typec6.png": "/kosmemorialview/static/media/typec6.6e5e1f958482b5c5974c.png",
+    "static/media/typec1.png": "/kosmemorialview/static/media/typec1.5e86c1919065ff7b0907.png",
+    "static/media/kitchen.png": "/kosmemorialview/static/media/kitchen.15ca8b839dfc9cc588fa.png",
+    "static/media/logo-kos-rapi.png": "/kosmemorialview/static/media/logo-kos-rapi.30bf5eb8f9076d9bf5d2.png",
     "index.html": "/kosmemorialview/index.html",
     "main.efd541c3.css.map": "/kosmemorialview/static/css/main.efd541c3.css.map",
-    "main.e2faa82d.js.map": "/kosmemorialview/static/js/main.e2faa82d.js.map"
+    "main.ed2f904b.js.map": "/kosmemorialview/static/js/main.ed2f904b.js.map"
   },
   "entrypoints": [
     "static/css/main.efd541c3.css",
-    "static/js/main.e2faa82d.js"
+    "static/js/main.ed2f904b.js"
   ]
 }
