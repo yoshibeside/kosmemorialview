@@ -1,5 +1,4 @@
 .headerpage {
-    margin-top: 10%;
     margin-left: 2rem;
     margin-right: 2rem;
     z-index: 1;
@@ -7,6 +6,12 @@
 
 .bg-amenities {
     background-image: linear-gradient( rgb(62, 111, 203), #544f3f);
+}
+
+.container-items {
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 .container {

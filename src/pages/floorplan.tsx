@@ -116,7 +116,7 @@ function Floorplan() {
     
         if (typeRoom === 'A') {
             return (
-                <img src={img_denah.typeC[num]} alt='floorplan' className='md:h-72 md:w-96 h-64 w-72'/>
+                <img src={img_denah.typeC[num]} alt='floorplan' className='md:h-72 md:w-96 h-52 w-60'/>
             )
         } 
         else if (typeRoom === 'C') {

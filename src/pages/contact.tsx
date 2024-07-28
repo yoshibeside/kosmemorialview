@@ -49,7 +49,7 @@ function Contact() {
                         </div>
                     </div>
                     
-                    <div className='p-2 rounded-lg text-md text-align-left border border-link-color w-3/5 h-96 self-center justify-self-center mb-8'>
+                    <div className='p-2 rounded-lg text-md text-align-left border border-link-color w-4/5 h-96 self-center justify-self-center mb-8'>
                         <h1 className='text-header-color md:text-5xl text-3xl font-martionmono font-semibold'>Contact Information</h1>
                             <div className='mt-12'>
                                 <p className='text-button-color text-lg font-martionmono font-semibold'> Alamat:  </p>

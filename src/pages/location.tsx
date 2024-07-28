@@ -62,7 +62,7 @@ function Location() {
 
         <div className={`flex flex-col m-2 items-center w-1/2 justify-center ${isVisible ? 'animate-in' : ''}`}>
           <div className="md:w-1/2 w-4/5 text-right align-center items-center text-pretty">
-            <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>The Perfect Balance</h1>
+            <h1 className='text-header-color md:text-7xl text-3xl font-martionmono font-semibold'>The Perfect Balance</h1>
             <br></br>
             <p className='header-child-text text-p-color md:text-base text-sm font-text'>Our residence offers first of the class (kost) in Dago. Perfect for students and where home is a corner away. Immerse yourself in the energy of Bandung's student scene while maintaining easy access to your campus and study resources – all within a short ride away.</p>
             <br></br>

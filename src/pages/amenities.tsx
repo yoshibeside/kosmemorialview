@@ -15,7 +15,7 @@ import laundry from '../assets/images/laundry.png'
 
 function Amenities() {
 
-    const list_amenities = ['Roof Top', 'Common Room setiap lantai', 'Laundry', 'Parkir', 'Teras Depan', 'Pantry setiap lantai', 'Security 24 jam', 'Akses khusus untuk penghuni', 'Balkoni pada setiap kamar', 'Kulkas pada setiap lantai', 'Dispenser pada setiap lantai', 'AC pada setiap kamar', 'CCTV']
+    const list_amenities = ['Roof Top', 'Common Rooms', 'Laundry', 'Parkir', 'Teras Depan', 'Pantries', 'Security 24 jam', 'Akses khusus', 'Balkoni tiap kamar', 'Kulkas', 'Dispenser', 'AC pada kamar', 'CCTV']
     const [selectedImage, setSelectedImage] = useState('');
     const [modalOpen, setModalOpen] = useState(false);
     const handleImageClick = (imageSrc: string) => {
@@ -30,10 +30,10 @@ function Amenities() {
     return(<> 
             <Navbar />
             <div className='w-full h-full flex flex-col items-center pb-8 justify-center bg-amenities'>
-                <div className='headerpage'>
+                <div className='headerpage md:mt-0 mt-20'>
                     <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>Amenities</h1>
                 </div>
-                <div className='grid my-12 container md:grid-cols-3 grid-cols-2 justify-self-left1'>
+                <div className='grid my-12 grid-flow-row container-items w-4/5 md:grid-cols-3 grid-cols-2'>
 
                         {list_amenities.map((amenity, index) => {
                             return <li key={index} className='text-p-color font-text'>{amenity}</li>
@@ -42,15 +42,15 @@ function Amenities() {
                 </div>
 
                 <div className='grid md:grid-cols-3 grid-cols-1 container gap-4'>
-                <img onClick={()=>handleImageClick(rooftop1)} src={rooftop1} alt='floorplan' className='hover-animate w-10/12 h-48'/>
-                <img onClick={()=>handleImageClick(rooftop2)} src={rooftop2} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(rooftop3)} src={rooftop3} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(basement)} src={basement} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(terasdepan)} src={terasdepan} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(kitchen)} src={kitchen} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(window)} src={window} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(airkulkas)} src={airkulkas} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
-                <img onClick={()=>handleImageClick(laundry)} src={laundry} alt='floorplan' className='w-10/12 h-48 hover-animate'/>
+                <img onClick={()=>handleImageClick(rooftop1)} src={rooftop1} alt='floorplan' className='hover-animate w-10/12 h-48 rounded-lg'/>
+                <img onClick={()=>handleImageClick(rooftop2)} src={rooftop2} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(rooftop3)} src={rooftop3} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(basement)} src={basement} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(terasdepan)} src={terasdepan} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(kitchen)} src={kitchen} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(window)} src={window} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(airkulkas)} src={airkulkas} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
+                <img onClick={()=>handleImageClick(laundry)} src={laundry} alt='floorplan' className='w-10/12 h-48 hover-animate rounded-lg'/>
 
                 </div>
             </div>
