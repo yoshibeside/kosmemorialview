@@ -1,14 +1,31 @@
 {
   "files": {
-    "main.css": "/kosmemorialview/static/css/main.d2147bfa.css",
-    "main.js": "/kosmemorialview/static/js/main.e1b39d73.js",
-    "static/media/img-room.png": "/kosmemorialview/static/media/img-room.4799a319ea416abfb431.png",
+    "main.css": "/kosmemorialview/static/css/main.efd541c3.css",
+    "main.js": "/kosmemorialview/static/js/main.e2faa82d.js",
+    "static/media/vid_website.mp4": "/kosmemorialview/static/media/vid_website.f1368d24f4dca0352455.mp4",
+    "static/media/terasdepan.png": "/kosmemorialview/static/media/terasdepan.729d9eba3025313e36a0.png",
+    "static/media/basement.png": "/kosmemorialview/static/media/basement.d66109180755b9129a0a.png",
+    "static/media/rooftop3.png": "/kosmemorialview/static/media/rooftop3.72be0ae0695f897d4ced.png",
+    "static/media/laundry.png": "/kosmemorialview/static/media/laundry.3e947197d046334fe80e.png",
+    "static/media/typec5.png": "/kosmemorialview/static/media/typec5.d359b85d2719eb9d94fb.png",
+    "static/media/rooftop1.png": "/kosmemorialview/static/media/rooftop1.dd005de877d5eb67363c.png",
+    "static/media/airkulkas.png": "/kosmemorialview/static/media/airkulkas.11c6c376573fc6fbbfaa.png",
+    "static/media/rooftop2.png": "/kosmemorialview/static/media/rooftop2.a7480c3651515dc7ffe9.png",
+    "static/media/typec3.png": "/kosmemorialview/static/media/typec3.6f5d1fe4a1c8320dfcf8.png",
+    "static/media/typec4.png": "/kosmemorialview/static/media/typec4.9520df945e14309795a0.png",
+    "static/media/typec2.png": "/kosmemorialview/static/media/typec2.25c6abad67b6308df662.png",
+    "static/media/typec1.png": "/kosmemorialview/static/media/typec1.329636a8d4baea7ad848.png",
+    "static/media/rooftop5.png": "/kosmemorialview/static/media/rooftop5.57e0b3a0d80f7824cf2f.png",
+    "static/media/window.png": "/kosmemorialview/static/media/window.c4d49afc20a625603102.png",
+    "static/media/typec6.png": "/kosmemorialview/static/media/typec6.373a557156c43fd5aeec.png",
+    "static/media/kitchen.png": "/kosmemorialview/static/media/kitchen.e342fc6e5e652b750511.png",
+    "static/media/logo-kos-rapi.png": "/kosmemorialview/static/media/logo-kos-rapi.7771f2f068555f43b6e3.png",
     "index.html": "/kosmemorialview/index.html",
-    "main.d2147bfa.css.map": "/kosmemorialview/static/css/main.d2147bfa.css.map",
-    "main.e1b39d73.js.map": "/kosmemorialview/static/js/main.e1b39d73.js.map"
+    "main.efd541c3.css.map": "/kosmemorialview/static/css/main.efd541c3.css.map",
+    "main.e2faa82d.js.map": "/kosmemorialview/static/js/main.e2faa82d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2147bfa.css",
-    "static/js/main.e1b39d73.js"
+    "static/css/main.efd541c3.css",
+    "static/js/main.e2faa82d.js"
   ]
 }
