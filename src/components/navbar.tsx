@@ -1,8 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/navbar.css';
+import { useNavigate } from 'react-router-dom';
+import logo from '../assets/images/logo-kos-rapi.png';
 
 function Navbar() {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+    const navHome = () => {
+        navigate('/');
+    }
+    const navAmenities = () => {
+        navigate('/amenities');
+    }
+    const navContact = () => {
+        navigate('/contact');
+    }
+    const navFloorPlan = () => {
+        navigate('/floorplan');
+    }
 
   const toggleMenu = (state: boolean) => {
     if (state !== show){ 
@@ -16,12 +31,12 @@ function Navbar() {
     <>
     <div  style={{ width: '100%', zIndex:2}}>
       <div className="navbar">
-        <a href="/">
+        <button onClick={()=>navHome()}>
           <img className='logo'
-            src="../../../../logo-kos-rapi.png"
-            alt="Dago Student Living"
+            src={logo}
+            alt="logo"
           />
-        </a>
+        </button>
 
         <nav className='fixed top-0 right-0 bottom-0 mt-12'>
           <button
@@ -55,37 +70,37 @@ function Navbar() {
             >
             <ul className='mt-16 flex justify-center flex-col'>
               <li className='max-w-full min-w-full'>
-                <a
-                  href="/"
+                <button
+                  onClick={() => navHome()}
                   className="menu-option min-w-full font-semibold mt-40 text-xl text-p-color dark:bg-blue-600"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/amenities"
+                <button
+                  onClick={() => navAmenities()}
                   className="menu-option min-w-full  font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Ameneties
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/floorplan"
+                <button
+                  onClick={() => navFloorPlan()}
                   className="menu-option min-w-full font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Floor Plan
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <button
+                  onClick={() => navContact()}
                   className="menu-option min-w-full font-semibold text-p-color text-xl dark:text-gray-400"
                 >
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>

@@ -2,6 +2,7 @@ import './styles/home.css'
 import { useNavigate } from 'react-router-dom';
 function Home() {
     const navigate = useNavigate();
+
     return(<> 
             <div id="header" >
             </div>

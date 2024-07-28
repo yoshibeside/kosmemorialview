@@ -2,6 +2,7 @@ import './styles/amenities.css'
 import '../components/styles/homePage2.css'
 import Footer from '../components/footer';
 import { useState } from 'react';
+import Navbar from '../components/navbar';
 
 function Amenities() {
 
@@ -18,6 +19,7 @@ function Amenities() {
       };
 
     return(<> 
+            <Navbar />
             <div className='w-full h-full flex flex-col items-center pb-8 justify-center bg-amenities'>
                 <div className='headerpage'>
                     <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>Amenities</h1>

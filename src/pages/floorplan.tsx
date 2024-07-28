@@ -1,6 +1,8 @@
 import './styles/floorplan.css'
 import { useState, useEffect } from 'react';
 import Footer from '../components/footer';
+import Navbar from '../components/navbar';
+
 function Floorplan() {
 
     const [select, setSelect] = useState(-1)
@@ -222,6 +224,7 @@ function Floorplan() {
 
 
     return(<> 
+            <Navbar />
             <div className='w-full h-full pb-12 random-image' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)'}}>
 
                 <div className='headerpage'>

@@ -9,9 +9,9 @@ import Contact from './pages/contact';
 
 
 function App() {
+
  return (
     <div id="body-content">
-        <Navbar />
         <Router>
             <Routes>
                 <Route path="/" element={<Landingpage />} />

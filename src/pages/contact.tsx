@@ -1,6 +1,7 @@
 import './styles/amenities.css'
 import Footer from '../components/footer';
 import { useState } from 'react';
+import Navbar from '../components/navbar';
 
 function Contact() {
 
@@ -20,6 +21,7 @@ function Contact() {
     ];
 
     return(<> 
+            <Navbar />
             <div className='w-full h-full flex flex-col items-center justify-center bgcontact'>
 
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 w-11/12 mt-28 mb-8'>
