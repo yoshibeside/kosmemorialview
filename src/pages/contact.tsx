@@ -54,7 +54,7 @@ function Contact() {
                             <div className='mt-12'>
                                 <p className='text-button-color text-lg font-martionmono font-semibold'> Alamat:  </p>
                                 <p className='text-sm font-martionmono text-p-color '> Jl. Dago Asri II No. D12, Dago, Kecamatan Coblong, Bandung, 40135 </p>
-                                <a className="text-link-color text-xs font-bitter " href="https://maps.app.goo.gl/VaSEDV9ib97FYF9RA?g_st=iw"> Open in Google Maps </a>
+                                <a className="text-link-color text-xs font-bitter " href="https://maps.app.goo.gl/veB5JtB2jRawmb3G6"> Open in Google Maps </a>
                                 <p className='mt-2 text-lg font-martionmono font-semibold text-button-color'> Email:  </p>
                                 <p className='text-sm font-martionmono text-p-color'> kosmemorialview@gmail.com</p>
                                 <p className='mt-2 text-lg font-martionmono font-semibold text-button-color'> Nomor Telepon:  </p>

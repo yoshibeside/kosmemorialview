@@ -68,7 +68,7 @@ function Location() {
             <br></br>
             <p className='header-child-text text-p-color md:text-base font-text text-sm'>Lupakan perjalanan jauh! Tempat tinggal kami terletak ideal di dekat kampus-kampus utama. Saat Anda membutuhkan waktu istirahat belajar, makanan lezat, atau hiburan, Anda bisa mendapatkannya disini. </p>
             <br></br>
-            <a className="text-link-color font-bold text-right" href="https://maps.app.goo.gl/VaSEDV9ib97FYF9RA?g_st=iw"> Open in Google Maps </a>
+            <a className="text-link-color font-bold text-right" href="https://maps.app.goo.gl/veB5JtB2jRawmb3G6"> Open in Google Maps </a>
           </div>
     
         </div>

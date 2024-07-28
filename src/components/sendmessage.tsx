@@ -61,7 +61,7 @@ function SendMessage() {
                         <div className='p-2 rounded-lg text-md text-align-left border border-link-color'>
                             <p className='text-button-color font-bitter font-medium'> Alamat:  </p>
                             <p className='text-sm font-bitter text-p-color font-thin '> Jl. Dago Asri II No. D12, Dago, Kecamatan Coblong, Bandung, 40135 </p>
-                            <a className="text-link-color text-xs font-bitter " href="https://maps.app.goo.gl/VaSEDV9ib97FYF9RA?g_st=iw"> Open in Google Maps </a>
+                            <a className="text-link-color text-xs font-bitter " href="https://maps.app.goo.gl/veB5JtB2jRawmb3G6"> Open in Google Maps </a>
                             <p className='mt-2 font-bitter font-medium text-button-color'> Email:  </p>
                             <p className='text-sm font-bitter font-thin text-p-color'> kosmemorialview@gmail.com</p>
                             <p className='mt-2 font-bitter font-medium text-button-color'> Nomor Telepon:  </p>
