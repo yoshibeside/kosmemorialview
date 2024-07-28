@@ -249,7 +249,7 @@ function Floorplan() {
 
                     <div className='flex justify-center items-center mt-8 md:flex-row flex-col gap-10'>
                         <div className='md:w-2/5 w-full'>
-                            <div className='border-4 border-link-color p-2 flex flex-col justify-center items-center'>
+                            <div className='border-4 rounded-t-lg border-link-color p-2 flex flex-col justify-center items-center'>
                                 <p className='mb-2 text-p-color text-2xl'> Rooms </p>
                                 { selected === 'Floor 1' && 
                                     <div className='grid grid-cols-7 grid-rows-[1fr,2rem,1fr] h-72 w-full text-p-color justify-center'>
@@ -356,7 +356,7 @@ function Floorplan() {
                                 
                             </div>
 
-                            <div className=' border-x-4 border-b-4 border-link-color p-2 flex flex-col justify-center items-center'>
+                            <div className=' border-x-4  rounded-b-lg border-b-4 border-link-color p-2 flex flex-col justify-center items-center'>
                                     <p className='mb-2 text-p-color text-2xl'> Room Type {typeRoom}</p>
 
                                     <div className='flex flex-row items-center justify-between'>
@@ -383,7 +383,7 @@ function Floorplan() {
                         <div className='md:w-2/5 w-full'>
                             
                             
-                            <div className='py-4 border-4 border-link-color '>
+                            <div className='py-4 border-4 rounded-lg border-link-color '>
                                 <p className='mx-4 text-p-color text-lg '> Fasilitas: </p>
                                 {roomTypes()}
                                 <p className='mx-4 text-p-color text-lg '> Harga: </p>
