@@ -20,6 +20,7 @@ function Floorplan() {
     const [categoriesF, setCategoriesF] = useState(['Floor 1', 'Floor 2'])
     const [categoriesM, setCategoriesM] = useState(['Floor 3', 'Floor 4'])
     const [selected, setSelected] = useState('Floor 1')
+    const categories = ['Floor 1', 'Floor 2', 'Floor 3', 'Floor 4']
 
 
     const handleRoomClick = (index: any) => {
@@ -51,18 +52,6 @@ function Floorplan() {
 
     const onLeaveMouse = () => {
         setSelect(-1)
-    }
-
-    const hoverStyle = (index: number) => {
-        if (currentPlan === index) {
-            return (
-                <div className='bg-button-color w-full h-1'></div>
-            )
-        } else if  (index === select) {
-            return (
-                <div className='bg-button-color w-full h-1'></div>
-            )
-        }
     }
 
     const toggleDropdown = () => {
@@ -207,16 +196,9 @@ function Floorplan() {
             <div className='w-full h-full pb-12 random-image' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)'}}>
 
                 <div className='headerpage'>
+                    <div className='flex flex-row'>
                     <h1 className='text-header-color md:text-7xl text-5xl font-martionmono font-semibold'>Floor Plans </h1>
-                    <div id='gendercategory' className="mt-8 grid grid grid-cols-2 gap-4 bg-text-link-color text-p-color">
-                        <button className='text-center' onMouseEnter={()=>{onEnterMouse(0)}} onMouseLeave={()=>{onLeaveMouse()}} onClick={()=>{setCurrentPlan(0); setSelected('Floor 1');}}>
-                            <p>Female Floors</p>
-                            {hoverStyle(0)}
-                        </button>
-                        <button className='text-center' onMouseEnter={()=>{onEnterMouse(1)}} onMouseLeave={()=>{onLeaveMouse()}} onClick={()=>{setCurrentPlan(1); setSelected('Floor 3');}}>
-                            <p>Male Floors</p>
-                            {hoverStyle(1)}
-                        </button>
+                    <h1 className='md:text-3xl text-2xl font-martionmono font-semibold ml-2 text-girls-only'>Girls Lodge</h1>
                     </div>
 
                     {/* dropdown */}
@@ -233,19 +215,16 @@ function Floorplan() {
                         </button>
                         {isOpen && (
                             <ul className=" absolute top-full left-0  bg-white border border-gray-300 rounded-md shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
-                                {currentPlan === 0 ? categoriesF.map((item) => (
+                                {
+                                categories.map((item) => (
                                     <button key={item} onClick={()=>{pickOne(item)}} className="block bg-p-color w-full px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-700">
                                     {item}
                                     </button>
-                                )) : categoriesM.map((item) => (
-                                    <button key={item} onClick={()=>{pickOne(item)}} className="block bg-p-color w-full px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    {item}
-                                    </button>
-                                ))}
+                                ))
+                                }
                             </ul>
                         )}
                     </div>
-                    
 
                     <div className='flex justify-center items-center mt-8 md:flex-row flex-col gap-10'>
                         <div className='md:w-2/5 w-full'>
@@ -386,8 +365,6 @@ function Floorplan() {
                             <div className='py-4 border-4 rounded-lg border-link-color '>
                                 <p className='mx-4 text-p-color text-lg '> Fasilitas: </p>
                                 {roomTypes()}
-                                <p className='mx-4 text-p-color text-lg '> Harga: </p>
-                                {roomTypePrice()}
                             </div>
                         </div>
                         

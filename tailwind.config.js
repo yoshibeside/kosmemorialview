@@ -31,6 +31,7 @@ module.exports = {
       'correct-color': 'green',
       'hover-gray-color': '#5F5A5A',
       'highlight-color': '#32a852',
+      'girls-only': '#F37CAD'
     }
   },
   plugins: [
